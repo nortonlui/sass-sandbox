@@ -1,0 +1,61 @@
+/* Example partials/import */
+/* Examples of variables */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #f4f4f4;
+  /* Example function */
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5; }
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  /* Example of nesting */ }
+  header h1 {
+    text-align: center;
+    text-transform: uppercase; }
+
+.section {
+  padding: 3rem; }
+  .section h3 {
+    font-size: 2rem; }
+  .section-a {
+    background: steelblue;
+    color: white; }
+  .section-b {
+    background: skyblue;
+    color: white; }
+
+/* Example Inheritance */
+.btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem; }
+
+.btn-light {
+  background: #f4f4f4;
+  color: #000; }
+  .btn-light:hover {
+    /* Example of mixin */
+    --webkit-transform: $property;
+    --ms-transform: $property;
+    transform: rotate(20deg);
+    /* Color functions */
+    background: #a8a8a8; }
+
+.btn-dark {
+  background: #333;
+  color: #fff; }
+  .btn-dark:hover {
+    --webkit-transform: $property;
+    --ms-transform: $property;
+    transform: rotate(-20deg);
+    background: gray; }
